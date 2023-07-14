@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Let's play: Dice</h1>
+    </nav>
+    <p id="rules">
+      &nbsp;Rules: Roll the dice using the button below. If you roll a 1, you
+      lose the game. Get a score of more than 20, you win.&nbsp;
+    </p>
+
+    <div class="onePlayerCont">
+      <button id="roll">Roll the dice</button>
+
+      <p id="score">Score: 0</p>
+
+      <p id="result"></p>
+
+      <img id="rollImg" src="" alt="" />
+    </div>
+
+    <div class="twoPlayerCont">
+      <button id="newGame">New Game</button>
+      <div class="playerOne">
+        <p>Player One:</p>
+        <button id="roll2">Roll the dice</button>
+
+        <p id="score2">Current Score: 0</p>
+
+        <button id="playerOneHold">Hold Score</button>
+      </div>
+      <p id="playerOneTotal">P1 Total Score:</p>
+      <div class="playerTwo">
+        <p>Player Two:</p>
+        <button id="roll3">Roll the dice</button>
+
+        <p id="score3">Current Score: 0</p>
+
+        <button id="playerTwoHold">Hold Score</button>
+      </div>
+      <p id="playerTwoTotal">P2 Total Score:</p>
+      <p class = "result" id="result2"></p>
+      <p class = "result" id="result3"></p>
+      <img id="rollImg2" src="" alt="" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

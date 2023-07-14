@@ -1,0 +1,84 @@
+body {
+  margin: 0px;
+  border: 0;
+  padding: 0;
+  background-image: url(casinopink.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  background-color: rgb(0, 217, 255);
+}
+
+#rules {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+}
+
+.onePlayerCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px black;
+  margin-top: 50px;
+  background-color: silver;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.twoPlayerCont {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 600px;
+  max-width: 600px;
+  margin: 50px auto;
+  border: solid 2px black;
+  background-color: silver;
+  padding: 0 50px;
+}
+
+#newGame {
+  background-color: coral;
+  width: 100px;
+  height: 50px;
+}
+
+#newGame:hover {
+  background-color: aqua;
+}
+
+.playerOne,
+.playerTwo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 20px;
+  max-width: fit-content;
+  background-color: blueviolet;
+  color: white;
+  border: solid 2px purple;
+}
+
+.result {
+  font-size: 30px;
+  color: red;
+}
