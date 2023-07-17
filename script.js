@@ -53,7 +53,7 @@ function updateScore() {
   score += dice;
 
   rollScore.textContent = `Score: ${score}`;
-  rollImg.src = "diceImages/" + dice + ".png";
+  rollImg.src = `diceImages/${dice}.png`;
 
   if (score > 20) {
     rollResult.textContent = "You won!";
@@ -76,7 +76,7 @@ function updateScore2() {
   score2 += dice;
 
   rollScore2.textContent = `Current Score: ${score2}`;
-  rollImg2.src = "diceImages/" + dice + ".png";
+  rollImg2.src = `diceImages/${dice}.png`;
 
   if (score2 > 20) {
     rollResult2.textContent = "Player 1 wins!";
