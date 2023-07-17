@@ -123,7 +123,7 @@ function resetGame() {
   
 }
 
-playerOneHold.addEventListener("click", function() {
+playerOneHold.addEventListener("click", () => {
  playerOneTotal.textContent = `P1 Total Score: ${score2}`
  rollScore2.textContent = "Score: 0";
  rollButton2.disabled = true;
@@ -131,7 +131,7 @@ playerOneHold.addEventListener("click", function() {
 });
 
 
-newGameButton.addEventListener("click", function() {
+newGameButton.addEventListener("click", () => {
   score2 = 0;
   score3 = 0;
   rollScore2.textContent = `Current Score:  ${score2}`;
