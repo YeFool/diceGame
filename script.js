@@ -68,6 +68,7 @@ function updateScore() {
       resetGame();
     }, 1000);
   }
+  
 }
 
 function updateScore2() {
@@ -96,7 +97,7 @@ function updateScore3() {
   score3 += dice;
 
   rollScore3.textContent = `Current Score: ${score3}`;
-  rollImg2.src = "diceImages/" + dice + ".png";
+  rollImg2.src = `diceImages/${dice}.png`;
 
   if (score3 > 20) {
     rollResult3.textContent = "Player 2 wins!";
@@ -118,7 +119,7 @@ function resetGame() {
     rollResult.textContent = "";
   }, 200);
 
-
+  rollButton.disabled = false;
   
 }
 
